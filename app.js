@@ -1,16 +1,16 @@
 const toggleList = document.getElementById('toggleList');
 const listDiv = document.querySelector('.list');
-const input = document.querySelector('input.description');
-const p = document.querySelector('p.description');
-const button = document.querySelector('button.description');
+const descriptionInput = document.querySelector('input.description');
+const descriptionP = document.querySelector('p.description');
+const descriptionButton = document.querySelector('button.description');
 const ul = document.querySelector('ul');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
 
-button.addEventListener('click', () => {
-  const inputValue = input.value;
-  p.innerHTML = `${inputValue}:`;
-  p.title = "List description";
+descriptionButton.addEventListener('click', () => {
+  const inputValue = descriptionInput.value;
+  descriptionP.innerHTML = `${inputValue}:`;
+  descriptionP.title = "List description";
 });
 
 toggleList.addEventListener('click', evt => {
